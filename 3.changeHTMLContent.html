@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Changing HTML Content</title>
+        
+        <style>
+        
+            .bluebox{
+                background-color: skyblue;
+            }
+            
+             .yellowbox{
+                background-color: yellow;
+            }
+            
+            
+             .greenbox{
+                background-color: greenyellow;
+            }
+            
+            
+            .awesome{
+                color: white;
+                font-size: 2em;
+            }
+        
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <h1>Changing HTML Content</h1>
+        
+        
+        <div class="bluebox" id="facebook">
+            <p>Facebook</p>
+            <p>Facebook is <span class="awesome">Awesome!</span></p>
+        </div>
+        
+        <div class="yellowbox" id="apple">
+            <p>Apple</p>
+        </div>
+        
+        <div class="greenbox" id="microsoft">
+            <p>Microsoft</p>
+        </div>
+        
+        <button id="button1">Change Facebook Content.
+        </button>
+        
+        
+        <button id="button2">Change AppleContent</button> 
+        
+        <script>
+        
+            document.getElementById("button1").onclick = function(){
+                document.getElementById("facebook").innerHTML = "<p>Look I have changed the text!!</p>";
+            }
+            
+            
+            document.getElementById("button2").onclick = function(){
+                
+                document.getElementById("apple").innerHTML = "<ul><li>audi</li><li>ferrari</li><li>mercedes</li></ul>"
+            }
+            
+            
+        
+        </script>
+        
+    </body>
+
+</html>

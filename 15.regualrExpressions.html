@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regualr Expressions</title>
+</head>
+
+<body>
+    <h1>Regualr Expressions</h1>
+    <p id=myP>String: <span id="string"></span></p>
+    <br />
+    <p id=myP2>Button: <span id="pattern"></span></p>
+    <br />
+    <p id=myP3>Result(search): <span id="search"></span></p>
+    <br />
+    <p id=myP4>Result(match): <span id="match"></span></p>
+    <br />
+    <p id=myP4>Result(test): <span id="test"></span></p>
+    
+   
+    
+    
+    <script>
+        
+        var str = "Atlanta 324342 %"
+//        var pattern = /[a-z]/ig;
+//        var pattern = /[^atn]/ig;
+//        var pattern = /[atn]/ig;
+//        var pattern = /\d/ig;
+//          var pattern = /\W/ig;
+          var pattern = /\s/ig;
+//        var pattern = new RegExp("a", "ig");
+        
+        document.getElementById("string").innerHTML = str;
+        
+        document.getElementById("pattern").innerHTML = pattern;
+        
+        document.getElementById("search").innerHTML = str.search(pattern);
+        
+        document.getElementById("match").innerHTML = str.match(pattern);
+        
+        document.getElementById("test").innerHTML = pattern.test(str);
+        
+        
+
+    </script>
+
+</body>
+</html>

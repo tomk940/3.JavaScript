@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If and Switch Conditions</title>
+</head>
+
+<body>
+    <h1>If and Switch Conditions</h1>
+    <p>Speed on the Motorway:<input id="speed" type="number"><button onclick="checkSpeed()">Check</button></p>
+    
+    <br />
+    
+    <p>Pick a Season:<input id="season" type="string"><button onclick="checkSeason()">Submit</button></p>
+    
+    
+    
+    
+    <script>
+        
+        function checkSpeed(){
+            var speed = document.getElementById("speed").value;
+
+            if(speed > 70){
+                alert("that is too fast");
+            } else if(speed < 70) {
+                alert("keep on trucking");
+            } else {
+                alert("perfect!!");
+            }
+        }
+        
+        
+        function checkSeason(){
+            var season = document.getElementById("season").value.toLowerCase();
+            switch(season){
+                case "summer":
+                    window.alert("It is summer!");
+                    break;
+                case "autumn":
+                    window.alert("It is Autumn!");
+                    break;
+                case "winter":
+                    window.alert("It is Winter!");
+                    break;
+                case "spring":
+                    window.alert("It is Spring!");
+                    break;
+                default:
+                    window.alert("Please pick one of the four Seasons (Summer, Autumn, Winter, Spring)");
+            }
+            
+        }
+        
+        
+        
+        
+      
+
+    </script>
+
+</body>
+</html>

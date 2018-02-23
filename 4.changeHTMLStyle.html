@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Changing HTML Style</title>
+        
+        <style>
+        
+            .bluebox{
+                background-color: skyblue;
+            }
+            
+             .yellowbox{
+                background-color: yellow;
+            }
+            
+            
+             .greenbox{
+                background-color: greenyellow;
+            }
+            
+            
+            .awesome{
+                color: white;
+                font-size: 2em;
+            }
+        
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <h1>Changing HTML Style</h1>
+        
+        
+        <div class="bluebox" id="facebook">
+            <p>Facebook</p>
+            <p>Facebook is <span class="awesome">Awesome!</span></p>
+        </div>
+        
+        <div class="yellowbox" id="apple">
+            <p>Apple</p>
+        </div>
+        
+        <div class="greenbox" id="microsoft">
+            <p>Microsoft</p>
+        </div>
+        
+        <button id="button1">Change Facebook Content.
+        </button>
+        
+        
+        <button id="button2">Change AppleContent</button> 
+        
+        <button id="button3">Change Microsoft Content</button> 
+        
+        <script>
+        
+            document.getElementById("button1").onclick = function(){
+                document.getElementById("facebook").style = "width: 200px";
+            }
+            
+            
+            document.getElementById("button2").onclick = function(){
+                
+                document.getElementById("apple").style = "background: red"
+            }
+            
+            
+            
+             document.getElementById("button3").onclick = function(){
+                document.getElementById("microsoft").style = "font-size: 2em";
+            }
+            
+            
+        
+        </script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset ="utf-8">
+    <title>
+      Changing HTML Using Variables
+    </title>
+    <style>
+      .bluebox{
+        background-color: #3A5795;
+		color: white;
+		height: 100px;
+		width:auto;
+	  }
+	  .yellowbox{
+		background-color: rgb(222, 224, 85);
+		height: 100px;
+		width: auto;
+	  }
+	  .greenbox{
+		background-color: #31af37;
+		height: 100px;
+		width: auto;
+	  }
+	  .great{
+		background-color: #5a3479;
+		
+	  }
+	</style>
+  </head>
+  
+  <body>
+    <div class="bluebox" id="facebook">
+      <p>
+        Facebook is 
+        <span class="great">
+          great
+        </span>
+        .
+      </p>
+      
+    </div>
+    <div class="yellowbox" id="apple">
+      <p>
+        Apple.
+      </p>
+      
+    </div>
+    <div class="greenbox">
+      <p>
+        Microsoft.
+      </p>
+      
+    </div>
+    <button id="button1">
+      Change facebook style.
+    </button>
+    <button id="button2">
+      Change apple style.
+    </button>
+    
+    <button id="background">
+          Change Background Color
+    </button>
+      
+    <script>
+        var color = "rgb(18, 149, 68)";
+        document.getElementById("button1").onclick = function(){
+            document.getElementById("facebook").style.backgroundColor = color;
+        }
+        
+        
+
+        
+        
+        
+        document.getElementById("button2").onclick = function(){
+            
+            a = Math.round(Math.random()*256);
+            b = Math.round(Math.random()*256);
+            c = Math.round(Math.random()*256);
+            
+            var RanColor = "rgb(" + a + ", " + b + ", " + c + ")";
+            document.getElementById("apple").style.backgroundColor = RanColor;
+            
+            document.getElementById("apple").innerHTML = "<p>" + RanColor + "</p>";
+        }
+        
+        document.getElementById("background").onclick = function(){
+            
+            a = Math.round(Math.random()*256);
+            b = Math.round(Math.random()*256);
+            c = Math.round(Math.random()*256);
+            
+            var RanColor = "rgb(" + a + ", " + b + ", " + c + ")";
+            document.getElementsByTagName("body")[0].style.backgroundColor = RanColor;
+            
+            
+        }
+        
+        
+    </script>
+  </body>
+  
+</html>

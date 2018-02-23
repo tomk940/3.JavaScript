@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Boxes</title>
+</head>
+
+<body>
+    <h1>Alert Boxes</h1>
+    <p id=myP></p>
+
+    
+    
+    
+    <script>
+        
+        var acceptCookies = window.confirm("Please Confirm you accept Cookies");
+    
+        
+        
+        
+        var visitor = prompt("Please enter your name");
+        
+        if(acceptCookies == true){
+            document.getElementById("myP").innerHTML = "Thanks you for Accepting Cookies, " + visitor;
+        } else {
+            document.getElementById("myP").innerHTML = "You must accept the Cookies, " + visitor + "!!!!";
+        }
+        
+    </script>
+
+</body>
+</html>

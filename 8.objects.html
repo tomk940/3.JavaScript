@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <h1>Objects</h1>
+    
+    
+    <script>
+        var myPhone = {
+            make: "Samsung",
+            model: "S6",
+            color: "black"            
+        };
+        windows.console.log(myPhone);
+        delete myPhone.model;
+        windows.console.log(myPhone);
+        windows.console.log(myPhone.model);
+        
+        
+        var myOtherPhone = myPhone;
+        myOtherPhone.make = "Apple";
+        var myOtherPhone = myPhone;
+        windows.console.log(myOtherPhone);
+        
+    </script>
+
+</body>
+</html>

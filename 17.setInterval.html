@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Intervals</title>
+</head>
+
+<body>
+    <h1>Set Intervals</h1>
+    <p id=myP>0</p>
+    <button id="stop" onclick="clearInterval(myCounter)">Stop Counting</button>
+    
+    
+    
+    <script>
+        
+    var x = 0;
+    
+    var myP = document.getElementById("myP");
+        
+    var myCounter = setInterval(function(){x++; myP.innerHTML = x}, 1000);
+        
+    
+    var delayedWelcomeMessage = setTimeout(function(){alert("welcome to page"); clearInterval(this)}, 3000);    
+        
+    </script>
+
+</body>
+</html>

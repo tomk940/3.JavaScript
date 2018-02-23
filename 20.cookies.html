@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+
+<body>
+    <h1>Cookies</h1>
+    <p id=myP></p>
+
+    
+    
+    
+    <script>
+        
+       document.cookie = "username = tomk940";
+       document.cookie = "age = 22";
+       document.cookie = "location = china";
+        
+//        window.alert(document.cookie);
+        
+        var cookie = document.cookie.split(';');
+        
+        
+        document.getElementById("myP").innerHTML = cookie;
+        
+    </script>
+
+</body>
+</html>

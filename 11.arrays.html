@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h1>Arrays</h1>
+    <p id="myP"></p>
+    <script>
+       
+        var shoppingList = ["bread", "eggs", "milk"];
+    
+//        var shoppingList = new Array("bread", "eggs", "milk");
+        
+        
+        showResult(shoppingList);
+        showResult(shoppingList[0]);
+        
+        function showResult(x){
+             document.getElementById("myP").innerHTML += "<br />" + x;
+        }
+        
+        
+        shoppingList[0] = "cereal";
+        showResult(shoppingList);
+        
+        delete shoppingList[0];
+        showResult(shoppingList);
+        //delete keeps the object but makes it empty
+        
+        shoppingList[0] = "chocolate";
+        showResult(shoppingList);
+        
+        shoppingList.splice(0,1);
+        showResult(shoppingList);
+        //splice removes the object compeletely
+        
+        shoppingList.splice(1,0, "banana", "apple");
+        showResult(shoppingList);
+        //splice can also be used to add eleements in the middle of an array
+        
+        
+        shoppingList.sort();
+        showResult(shoppingList);
+        //alphabetically sorts the array
+        
+       
+        var myString = "what is the weather like"
+        var myArray = myString.split("");
+        showResult(myArray);
+        //each character of the string (including spaces) becomes an array object if the split has no spaces in the parameter
+        
+        var myString2 = "what is the weather like"
+        var myArray2 = myString.split(" ");
+        showResult(myArray2);
+        //each word of the string becomes an array object if the split has a space in the parameter
+        
+        
+        
+    </script>
+
+</body>
+</html>
